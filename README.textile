@@ -1,0 +1,35 @@
+h1. FormtasticCalendarDateSelect
+
+Based on Paul Smith's Formtastic_Calendar (http://github.com/elandesign/formtastic_calendar), an extension for Formtastic[1] to generate lightweight javascript calendar date inputs using the CalendarDateSelect plugin[2]
+
+h2. Example
+
+Where Task#due_date is a :date field
+
+<pre><code><% semantic_form_for @task do |form| %>
+  <% form.inputs do %>
+    <%= form.input :due_date, :as => :calendardateselect %>
+  <% end %>
+<% end %></code></pre>
+
+h2. Dependencies
+
+You must have the formtastic gem/plugin added to your application.
+
+You must have the calendar_date_select gem/plugin added to your application.
+
+(Tested with formtastic 0.9.7 and calendar_date_select 1.15)
+
+h2. Todo
+
+Test, test, test...
+
+Attempt to port this to unobtrusive javascript, and provide graceful degradation if possible.
+
+h2. References
+
+fn1. "Formtastic @ GitHub":http://github.com/justinfrench/formtastic
+
+fn2. "CalendarDateSelect":http://github.com/timcharper/calendar_date_select
+
+Copyright (c) 2009 David Oshiro, released under the MIT license
