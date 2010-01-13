@@ -20,11 +20,16 @@ You must have the calendar_date_select gem/plugin added to your application.
 
 (Tested with formtastic 0.9.7 and calendar_date_select 1.15)
 
-h2. Todo
+h2. Installation
 
-Test, test, test...
+Install as a gem 
 
-Attempt to port this to unobtrusive javascript, and provide graceful degradation if possible.
+Add to environment.rb: config.gem "formtastic_calendar_date_select", :source=>"http://gemcutter.org"
+<pre><code>rake gems:install</code></pre>
+
+Install as plugin
+
+<pre><code>script/plugin install git://github.com/dyohi/formtastic_calendar_date_select</code></pre>
 
 h2. References
 
