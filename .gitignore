@@ -1,5 +1,4 @@
 .DS_Store
 *~
 *.swp
-formtastic_calendar_date_select-*/**/*
-
+pkg/**/*
